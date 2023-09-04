@@ -36,7 +36,19 @@ diceCode8 = [[
 
         if newResult != "" then
             broadcastToAll("R2D2: " .. Player[player_color].steam_name .. " manually changed a " .. self.getRotationValue() .. " to a " .. newResult, {0,0.9,1})
+            countDices()
         end
+    end
+
+    function countDices()
+				// TODO found a better way to wait for resting (coroutine?). This doesn't
+				// work for instance for roll because the time roll is longer than 1s.
+				// TODO call this function on other player actions like roll and manual change in
+				// the menu
+        Wait.time(function()
+            local tray = getObjectFromGUID("752fc4")
+            tray.call("countDices")
+        end, 1)
     end
 
     --Broadcasts a message when dice are picked up (This is to stop cheaters from changing dice without notice)
@@ -747,8 +759,6 @@ function placeDice()
             --determines the new Rotational value of the dice
             rotVal = spawnedDice[place].diceObj.getRotationValue()
             if rotVal == "Failure" then
-                numFailure = numFailure + 1
-
                 if spawnedDice[place].diceObj.getVar("sides") == 8 then
                   spawnedDice[place].diceObj.setRotation({x = 33.74, y = 180.17, z = 270})
                 elseif spawnedDice[place].diceObj.getVar("sides") == 6 then
@@ -756,23 +766,18 @@ function placeDice()
                 end
                 spawnedDice[place].result = rotVal
             elseif rotVal == "Block" then
-                numBlock = numBlock + 1
                 spawnedDice[place].diceObj.setRotation({x = 0, y = 0, z = 0})
                 spawnedDice[place].result = rotVal
             elseif rotVal == "Hit" then
-                numHit = numHit + 1
                 spawnedDice[place].diceObj.setRotation({x = 33.74, y = 180.17, z = 180})
                 spawnedDice[place].result = rotVal
             elseif rotVal == "Attack Expertise" then
-                numAex = numAex + 1
                 spawnedDice[place].diceObj.setRotation({x = 326.26, y = 5.66, z = 90})
                 spawnedDice[place].result = rotVal
             elseif rotVal == "Critical" then
-                numCrit = numCrit + 1
                 spawnedDice[place].diceObj.setRotation({x = 326.26, y = 5.66, z = 0})
                 spawnedDice[place].result = rotVal
             elseif rotVal == "Defense Expertise" then
-                numDex = numDex + 1
                 spawnedDice[place].diceObj.setRotation({x = 0, y = 0, z = 270})
                 spawnedDice[place].result = rotVal
 
@@ -789,9 +794,31 @@ function placeDice()
     --printResults()
     rollButton.editButton({index = 0, label = ""})
     rolling = false
-    updateButtons()
+    countDices()    
 end
 
+function countDices() 
+    resetCounters()
+    for i, dice in pairs(spawnedDice) do
+        
+        rotVal = dice.diceObj.getRotationValue()
+        print(tostring(i) .. " dice " .. rotVal)
+        if rotVal == "Failure" then
+            numFailure = numFailure + 1
+        elseif rotVal == "Block" then
+            numBlock = numBlock + 1
+        elseif rotVal == "Hit" then
+            numHit = numHit + 1            
+        elseif rotVal == "Attack Expertise" then
+            numAex = numAex + 1        
+        elseif rotVal == "Critical" then
+            numCrit = numCrit + 1            
+        elseif rotVal == "Defense Expertise" then
+            numDex = numDex + 1            
+        end
+    end
+    updateButtons()
+end
 
 
 --prints the results after the above function counts each dice rolled
