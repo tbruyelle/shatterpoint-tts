@@ -1,0 +1,31 @@
+<Defaults>
+   <Image preserveAspect="true" onClick="setClock" width="60"/>
+</Defaults>
+
+<Panel rotation="45.0,0.0,180.0" position="-479.0,110.0,-190.0" width="320" height="120" color="rgba(0,0,0,1)">
+    <Image id="Sc1_01" image="0" height="90" color="rgba(0.05,0.5,1,0.7)" offsetXY="128,0" />
+    <Image id="Sc1_10" image="0" height="90" color="rgba(0.05,0.5,1,0.7)" offsetXY="64,0"  />
+    <Image id="Cn1"    image=":" height="90" color="rgba(0.05,0.5,1,0.7)" offsetXY="31,0"   showAnimation="FadeIn" hideAnimation="FadeOut" animationDuration="0.125" raycastTarget="false"/>
+    <Image id="Mn1_01" image="0" height="90" color="rgba(0.05,0.5,1,0.7)" offsetXY="-2,0"   />
+    <Image id="Mn1_10" image="0" height="90" color="rgba(0.05,0.5,1,0.7)" offsetXY= "-66,0" />
+    <Image id="Cn2"    image=":" height="90" color="rgba(0.05,0.5,1,0.7)" offsetXY= "-99,0" showAnimation="FadeIn" hideAnimation="FadeOut" animationDuration="0.125" raycastTarget="false"/>
+    <Image id="Hr1_1"  image="0" height="90" color="rgba(0.05,0.5,1,0.7)" offsetXY="-132,0" />
+</Panel>
+<Panel rotation="45.0,0.0,180.0" position="472.0,110.0,-190.0" width="320" height="120" color="rgba(0,0,0,1)">
+    <Image id="Sc2_01" image="0" height="90" color="rgba(0.8,0.05,0.05,0.7)" offsetXY="132,0" />
+    <Image id="Sc2_10" image="0" height="90" color="rgba(0.8,0.05,0.05,0.7)" offsetXY="68,0" />
+    <Image id="Cn3"    image=":" height="90" color="rgba(0.8,0.05,0.05,0.7)" offsetXY="35,0" showAnimation="FadeIn" hideAnimation="FadeOut" animationDuration="0.125" raycastTarget="false"/>
+    <Image id="Mn2_01" image="0" height="90" color="rgba(0.8,0.05,0.05,0.7)" offsetXY="2,0" />
+    <Image id="Mn2_10" image="0" height="90" color="rgba(0.8,0.05,0.05,0.7)" offsetXY= "-62,0" />
+    <Image id="Cn4"    image=":" height="90" color="rgba(0.8,0.05,0.05,0.7)" offsetXY= "-95,0" showAnimation="FadeIn" hideAnimation="FadeOut" animationDuration="0.125" raycastTarget="false"/>
+    <Image id="Hr2_1"  image="0" height="90" color="rgba(0.8,0.05,0.05,0.7)" offsetXY="-128,0" />
+</Panel>
+<Panel rotation="45.0,0.0,180.0" position="-5,105.0,-180.0" width="525" height="195" color="rgba(0,0,0,1)">
+    <Image id="Sc3_01" image="0" width="90" height="150" color="rgba(1,1,0.97,0.7)" offsetXY="200,0" />
+    <Image id="Sc3_10" image="0" width="90" height="150" color="rgba(1,1,0.97,0.7)" offsetXY="101,0" />
+    <Image id="Cn5"    image=":" width="90" height="150" color="rgba(1,1,0.97,0.7)" offsetXY="50,0" showAnimation="FadeIn" hideAnimation="FadeOut" animationDuration="0.125" raycastTarget="false"/>
+    <Image id="Mn3_01" image="0" width="90" height="150" color="rgba(1,1,0.97,0.7)" offsetXY="-2,0" />
+    <Image id="Mn3_10" image="0" width="90" height="150" color="rgba(1,1,0.97,0.7)" offsetXY= "-101,0" />
+    <Image id="Cn6"    image=":" width="90" height="150" color="rgba(1,1,0.97,0.7)" offsetXY= "-153,0" showAnimation="FadeIn" hideAnimation="FadeOut" animationDuration="0.125" raycastTarget="false"/>
+    <Image id="Hr3_1"  image="0" width="90" height="150" color="rgba(1,1,0.97,0.7)" offsetXY="-205,0" />
+</Panel>
