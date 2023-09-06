@@ -41,10 +41,10 @@ diceCode8 = [[
     end
 
     function countDices()
-				// TODO found a better way to wait for resting (coroutine?). This doesn't
-				// work for instance for roll because the time roll is longer than 1s.
-				// TODO call this function on other player actions like roll and manual change in
-				// the menu
+        -- TODO found a better way to wait for resting (coroutine?). This doesn't
+        -- work for instance for roll because the time roll is longer than 1s.
+        -- TODO call this function on other player actions like roll and manual change in
+        -- the menu
         Wait.time(function()
             local tray = getObjectFromGUID("752fc4")
             tray.call("countDices")
