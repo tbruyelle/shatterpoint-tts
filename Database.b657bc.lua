@@ -670,6 +670,21 @@ characterDatabase = {
 	cBase = small, 
 	cAssetbundle = "http://cloud-3.steamusercontent.com/ugc/2026101166541344607/9EE34C467C1D40354D0B9C62B0914BCF8C4468CA/"
 	},
+{
+	cName = "Jedi Master Plo Koon",                      
+	cUnique = "Jedi Manster Plo Koon",
+	cType = "primary",
+	cForce = 3,
+	cSquadPoints = 8,
+	cPointCost = 0,
+	cEra = "Clone Wars",
+	cStamina = 10,
+	cDurability = 3,
+	cTtaid = "50",
+	cPbid = "00090101",
+	cBase = small, 
+	cAssetbundle = "http://cloud-3.steamusercontent.com/ugc/2026101166541344607/9EE34C467C1D40354D0B9C62B0914BCF8C4468CA/"
+	},
 
 
 
