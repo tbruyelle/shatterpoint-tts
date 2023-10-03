@@ -1,0 +1,8 @@
+<button
+    onClick="rotatemap"
+    position="0 0 -30"
+    width="400"
+    height="150"
+    fontsize="72">
+    Rotate Map
+</button>

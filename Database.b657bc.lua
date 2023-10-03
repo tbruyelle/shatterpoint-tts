@@ -285,7 +285,7 @@ characterDatabase = {
 	cStamina = 9,
 	cDurability = 3,
 	cTtaid = "33",
-	cPbid = "00000000",
+	cPbid = "00120103",
 	cBase = small, 
 	cAssetbundle = "http://cloud-3.steamusercontent.com/ugc/2026101166541344607/9EE34C467C1D40354D0B9C62B0914BCF8C4468CA/"
 	},
@@ -426,7 +426,7 @@ characterDatabase = {
 	cStamina = 8,
 	cDurability = 2,
 	cTtaid = "34",
-	cPbid = "00000000",
+	cPbid = "00120104",
 	cBase = small, 
 	cAssetbundle = "http://cloud-3.steamusercontent.com/ugc/2026101166541344607/9EE34C467C1D40354D0B9C62B0914BCF8C4468CA/"
 	},
@@ -685,6 +685,37 @@ characterDatabase = {
 	cBase = small, 
 	cAssetbundle = "http://cloud-3.steamusercontent.com/ugc/2026101166541344607/9EE34C467C1D40354D0B9C62B0914BCF8C4468CA/"
 	},
+{
+	cName = "Jedi Knight Luke Skywalker",                      
+	cUnique = "Jedi Knight Luke Skywalker",
+	cType = "primary",
+	cForce = 3,
+	cSquadPoints = 7,
+	cPointCost = 0,
+	cEra = "Galactic Civil War ",
+	cStamina = 11,
+	cDurability = 3,
+	cTtaid = "50",
+	cPbid = "00090101",
+	cBase = small, 
+	cAssetbundle = "http://cloud-3.steamusercontent.com/ugc/2026101166541344607/9EE34C467C1D40354D0B9C62B0914BCF8C4468CA/"
+	},
+{
+	cName = "C-3PO and R2-D2",                      
+	cUnique = "C-3PO and R2-D2",
+	cType = "secondary",
+	cForce = 0,
+	cSquadPoints = 0,
+	cPointCost = 4,
+	cEra = "Galactic Civil War ",
+	cStamina = 8,
+	cDurability = 2,
+	cTtaid = "50",
+	cPbid = "00090101",
+	cBase = small, 
+	cAssetbundle = "http://cloud-3.steamusercontent.com/ugc/2026101166541344607/9EE34C467C1D40354D0B9C62B0914BCF8C4468CA/"
+	},
+
 
 
 
